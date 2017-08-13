@@ -44,6 +44,21 @@
                 <version>1.6.0</version>
                 <executions>
                     <execution>
+                        <id>compile Arduino</id>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>exec</goal>
+                        </goals>
+                        <configuration>
+                            <workingDirectory>${basedir}/arduino/</workingDirectory>
+                            <executable>platformio</executable>
+                            <arguments>
+                                <argument>run</argument>
+                            </arguments>
+                        </configuration>
+                    </execution>
+
+                    <execution>
                         <goals>
                             <goal>java</goal>
                         </goals>
