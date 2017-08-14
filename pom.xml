@@ -61,10 +61,15 @@
                                 <id>run Skymaid</id>
                                 <phase>install</phase>
                                 <goals>
-                                    <goal>java</goal>
+                                    <goal>exec</goal>
                                 </goals>
                                 <configuration>
-                                    <mainClass>com.skynet.skymaid.GetAlive</mainClass>
+                                    <executable>java</executable>
+                                    <arguments>
+                                        <argument>-classpath</argument>
+                                        <classpath/>
+                                        <argument>com.skynet.skymaid.GetAlive</argument>
+                                    </arguments>
                                 </configuration>
                             </execution>
                         </executions>
