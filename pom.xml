@@ -58,6 +58,8 @@
                                 </configuration>
                             </execution>
                             <execution>
+                                <id>run Skymaid</id>
+                                <phase>install</phase>
                                 <goals>
                                     <goal>java</goal>
                                 </goals>
