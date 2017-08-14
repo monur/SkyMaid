@@ -28,7 +28,7 @@
 
     <profiles>
         <profile>
-            <id>arduino</id>
+            <id>run</id>
             <build>
                 <plugins>
                     <plugin>
@@ -55,6 +55,14 @@
                                         <argument>-U</argument>
                                         <argument>flash:w:firmware.hex</argument>
                                     </arguments>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <goals>
+                                    <goal>java</goal>
+                                </goals>
+                                <configuration>
+                                    <mainClass>com.skynet.skymaid.GetAlive</mainClass>
                                 </configuration>
                             </execution>
                         </executions>
@@ -102,22 +110,6 @@
                     <source>1.8</source>
                     <target>1.8</target>
                 </configuration>
-            </plugin>
-
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                        <configuration>
-                            <mainClass>com.skynet.skymaid.GetAlive</mainClass>
-                        </configuration>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
     </build>
