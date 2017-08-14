@@ -5,3 +5,4 @@ arduino/.pioenvs/*
 !arduino/.pioenvs/uno/
 arduino/.pioenvs/uno/*
 !arduino/.pioenvs/uno/firmware.hex
+logs/

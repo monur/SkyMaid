@@ -23,6 +23,7 @@ public class Connection {
             sampleClient.connect(connOpts);
             logger.info("paho-client connected to broker");
         } catch (MqttException e) {
+            logger.error("Mqtt connection exception", e);
             throw new RuntimeException("Cannot connect to Mqtt broker", e);
         }
         return sampleClient;
