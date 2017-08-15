@@ -50,6 +50,11 @@
             <artifactId>ardulink-core-util</artifactId>
             <version>2.0.1</version>
         </dependency>
+        <dependency>
+            <groupId>org.ardulink</groupId>
+            <artifactId>ardulink-core-serial-rxtx</artifactId>
+            <version>2.0.1</version>
+        </dependency>
 
     </dependencies>
 

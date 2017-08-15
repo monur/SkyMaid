@@ -44,6 +44,7 @@ void setup() {
 
 
   myservo.attach(9);
+  myservo.write(0);
 }
 
 void loop() {
