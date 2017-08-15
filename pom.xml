@@ -63,27 +63,27 @@
                         <artifactId>exec-maven-plugin</artifactId>
                         <version>1.6.0</version>
                         <executions>
-                            <!--<execution>-->
-                                <!--<id>upload Arduino</id>-->
-                                <!--<phase>install</phase>-->
-                                <!--<goals>-->
-                                    <!--<goal>exec</goal>-->
-                                <!--</goals>-->
-                                <!--<configuration>-->
-                                    <!--<workingDirectory>${basedir}/arduino/.pioenvs/uno/</workingDirectory>-->
-                                    <!--<executable>avrdude</executable>-->
-                                    <!--<arguments>-->
-                                        <!--<argument>-pm328p</argument>-->
-                                        <!--<argument>-P/dev/ttyACM0</argument>-->
-                                        <!--<argument>-carduino</argument>-->
-                                        <!--<argument>-b115200</argument>-->
-                                        <!--<argument>-F</argument>-->
-                                        <!--<argument>-u</argument>-->
-                                        <!--<argument>-U</argument>-->
-                                        <!--<argument>flash:w:firmware.hex</argument>-->
-                                    <!--</arguments>-->
-                                <!--</configuration>-->
-                            <!--</execution>-->
+                            <execution>
+                                <id>upload Arduino</id>
+                                <phase>install</phase>
+                                <goals>
+                                    <goal>exec</goal>
+                                </goals>
+                                <configuration>
+                                    <workingDirectory>${basedir}/arduino/.pioenvs/uno/</workingDirectory>
+                                    <executable>avrdude</executable>
+                                    <arguments>
+                                        <argument>-pm328p</argument>
+                                        <argument>-P/dev/ttyACM0</argument>
+                                        <argument>-carduino</argument>
+                                        <argument>-b115200</argument>
+                                        <argument>-F</argument>
+                                        <argument>-u</argument>
+                                        <argument>-U</argument>
+                                        <argument>flash:w:firmware.hex</argument>
+                                    </arguments>
+                                </configuration>
+                            </execution>
                             <execution>
                                 <id>run Skymaid</id>
                                 <phase>install</phase>
@@ -95,7 +95,7 @@
                                     <arguments>
                                         <argument>-classpath</argument>
                                         <classpath/>
-                                        <argument>com.skynet.skymaid.GetAlive</argument>
+                                        <argument>com.skynet.skymaid.ArduinoLink</argument>
                                     </arguments>
                                 </configuration>
                             </execution>
