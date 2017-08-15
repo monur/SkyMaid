@@ -4,6 +4,7 @@ import static org.ardulink.core.convenience.Links.setChoiceValues;
 import java.util.concurrent.TimeUnit;
 
 import org.ardulink.core.Pin;
+import org.ardulink.core.convenience.Links;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.ardulink.core.Connection;
@@ -64,7 +65,8 @@ public class ArduinoLink {
     }
 
     private Link createLink() {
-        return setChoiceValues(LinkManager.getInstance().getConfigurer(URIs.newURI(connString))).newLink();
+        return Links.getDefault();
+//        return setChoiceValues(LinkManager.getInstance().getConfigurer(URIs.newURI(connString))).newLink();
     }
 
 }
