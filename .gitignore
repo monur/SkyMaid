@@ -1,7 +1,7 @@
 .idea/
 !arduino/.pioenvs/
 arduino/.pioenvs/*
-arduino/lib
+arduino/lib/
 !arduino/.pioenvs/uno/
 arduino/.pioenvs/uno/*
 !arduino/.pioenvs/uno/firmware.hex
