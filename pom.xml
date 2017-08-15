@@ -74,7 +74,7 @@
                                     <executable>avrdude</executable>
                                     <arguments>
                                         <argument>-pm328p</argument>
-                                        <argument>-P/dev/ttyACM0</argument>
+                                        <argument>-P/dev/ttyS80</argument>
                                         <argument>-carduino</argument>
                                         <argument>-b115200</argument>
                                         <argument>-F</argument>

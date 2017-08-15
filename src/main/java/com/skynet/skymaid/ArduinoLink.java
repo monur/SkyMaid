@@ -65,8 +65,7 @@ public class ArduinoLink {
     }
 
     private Link createLink() {
-        return Links.getDefault();
-//        return setChoiceValues(LinkManager.getInstance().getConfigurer(URIs.newURI(connString))).newLink();
+        return setChoiceValues(LinkManager.getInstance().getConfigurer(URIs.newURI(connString))).newLink();
     }
 
 }
